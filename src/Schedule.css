@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+body {
+  /* 화면에 이미지가 가득 차도록 설정 */
+  background-image: url("/src/image/backGround.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#title {
+  display: inline-block;
+  color: white;
+  border-top: 2px solid white;
+  /* 화면의 가로 너비의 1/10 만큼의 margin을 줌 */
+  margin: 10px 10%;
+  /* 가변 패딩을 적용할 패딩값 / 작용할 박스를 감싸고 있는 박스의 가로 너비 * 100
+    -> 2% : 화면의 가로 너비의 2/300 만큼의 padding값 */
+  padding: 2%;
+  /* 80% : 화면 가로 너비의 8/10 만큼의 width */
+  width: 80%;
+  text-align: center;
+  /* 4vw : 화면 가로 너비의 4/100 만큼의 font-size를 적용 */
+  font-size: 4vw;
+  animation: slide 2s ease-out;
+}
+
+.schedule {
+  /* 화면의 세로 높이의 5/100 만큼의 margin을 줌 */
+  margin: 5% auto;
+  border-collapse: collapse;
+  animation: slide 2s ease-out;
+}
+
+.schedule td {
+  padding: 10px;
+  border: 1px solid WHITE;
+  text-align: center;
+  font-size: 12px;
+  width: 40px;
+  height: 2%;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
